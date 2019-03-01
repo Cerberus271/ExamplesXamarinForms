@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.Control"
+             xmlns:customcontrols="clr-namespace:App1.CustomControls"
+             x:Class="App1.Cards.Card3">
+
+    
+    
+    <ContentPage.Content>
+
+
+        <Grid 
+            BackgroundColor="LightGray"
+            Padding="0" 
+            RowSpacing="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="192" />
+                <RowDefinition Height="auto" />                
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="grid_header"
+                  Padding="0" 
+                  BackgroundColor="#e1e1e3" 
+                  RowSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="192" />
+                </Grid.RowDefinitions>
+
+                <Grid 
+                    Grid.Row="0" 
+                    Padding="0" 
+                    BackgroundColor="#e4e4e4">
+
+                    <Image 
+                        Aspect="AspectFill"
+                        Source="Breakfast1.png"  />
+                </Grid>
+
+                <Frame  BackgroundColor="#66c8cbd1" 
+                        VerticalOptions="End"
+                        Padding="0"
+                        Margin="0"
+                        CornerRadius="0"
+                        HeightRequest="70"
+                        Grid.Row="0">
+
+                    <Grid 
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Transparent"
+                        RowSpacing="0">
+
+                        <Grid 
+                            Padding="10,2" 
+                            RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+
+                            <Grid
+                            RowSpacing="0"
+                            ColumnSpacing="0">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label 
+                                Text="Pardos chiken" 
+                                FontAttributes="Bold"
+                                FontSize="28" 
+                                TextColor="#ffffff" 
+                                HorizontalOptions="Start"/>
+
+                                <Label                               
+                                HorizontalOptions="End"
+                                Grid.Column="1"
+                                TextColor="#ffffff"
+                                Text="Rating"/>
+
+                            </Grid>
+
+                            <Label 
+                            Grid.Row="1" 
+                            Text="Av. Vargas machuca 12345"  
+                            FontSize="14"
+                            FontAttributes="Bold"
+                            TextColor="#ffffff" />
+
+                        </Grid>
+
+                    </Grid>
+
+                </Frame>
+
+            </Grid>
+            
+
+            <Frame x:Name="grid_type_event"
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                Grid.Row="1"
+                BackgroundColor="White"
+                Margin="10,5,10,5"
+                Padding="5">
+
+                <StackLayout>
+
+                    <Grid  x:Name="selected_type_event_grid"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand"                
+                           Margin="10,5,10,5"
+                           BackgroundColor="White"
+			               Padding="0">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+
+                        <Label x:Name="lblEvent"
+                              Text="{Binding TextEvent}" 
+                              FontSize="16"
+                              FontAttributes="Bold"
+                              TextColor="Black"
+                              HorizontalOptions="StartAndExpand"
+				              VerticalOptions="Start"/>
+
+                        <local:HVScrollGridView ListOrientation="Horizontal"
+                                            Grid.Row="1"
+                                            x:Name="MessagesListView"
+                                            ItemsSource="{Binding All_Events}" 
+                                            HorizontalOptions="StartAndExpand"
+									        VerticalOptions="Start">
+                            <local:HVScrollGridView.ItemTemplate>
+                                <DataTemplate>
+                                    <ContentView>
+                                        <ContentView.Content>
+                                            <StackLayout Padding="2">
+
+                                                <Button Text="{Binding Name}"
+                                                    BackgroundColor="#2196F3"
+                                                     Command ="{Binding BindingContext.CommandSelectedEvent, Source={x:Reference MessagesListView}}"
+                                                    CommandParameter="{Binding .}"
+                                                    HeightRequest="30"
+                                                    CornerRadius="10"
+                                                    FontSize="8"
+                                                    TextColor="White"/>
+
+                                            </StackLayout>
+                                        </ContentView.Content>
+                                    </ContentView>
+                                </DataTemplate>
+                            </local:HVScrollGridView.ItemTemplate>
+                        </local:HVScrollGridView>
+                    </Grid>
+
+                </StackLayout>
+
+            </Frame>
+
+
+            <StackLayout x:Name="panel_detail_event"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="Transparent"
+                         IsVisible="{Binding IsVisible_panel_detail_event}"
+                         Grid.Row="2">
+
+
+                <Frame
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                BackgroundColor="White"
+                Margin="10,5,10,5"    
+                Padding="5">
+
+                    <StackLayout x:Name="selected_hour_panel"                         
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="FillAndExpand"
+                             Margin="10,5,10,5"
+                             BackgroundColor="White">
+
+                        <Grid
+                    RowSpacing="0"
+                    ColumnSpacing="0"
+                    Padding="0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="90" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label x:Name="lblTitle"
+                               Text="{Binding TextDayAndHour , StringFormat='Fecha y Hora : {0}'}"
+                               FontSize="16"
+                               TextColor="Black"
+                               Grid.ColumnSpan="2"
+                               Margin="0,0,0,5"
+                               FontAttributes="Bold"
+                               HorizontalOptions="StartAndExpand"
+				               VerticalOptions="Start"/>
+
+                            <customcontrols:CustomListView x:Name="lst_Days"                         
+                          Grid.Row="1"
+                          HasUnevenRows="True"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="White"
+                          ItemsSource="{Binding List_Days}" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+
+                                            <StackLayout Padding="8">
+
+                                                <Label 
+                                           Text="{Binding Day, StringFormat='{}{0:dddd, dd MMMM yyyy}'}"
+                                           FontSize="12"
+                                           FontAttributes="Bold"
+                                            TextColor="Gray"
+                                           BackgroundColor="Transparent" 
+                                           HorizontalOptions="Start"/>
+
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </customcontrols:CustomListView>
+
+                            <customcontrols:CustomListView x:Name="lst_Hours" 
+                          HasUnevenRows="True"
+                          Grid.Column="1"
+                          Grid.Row="1"                          
+                          BackgroundColor="White"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          ItemsSource="{Binding List_Hours}" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+
+                                            <StackLayout Padding="10">
+
+                                                <Label 
+                                           Text="{Binding Hour, StringFormat='{}{0:hh\\:mm}'}"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           BackgroundColor="Transparent"
+                                            TextColor="Gray"
+                                           HorizontalOptions="Start"/>
+
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </customcontrols:CustomListView>
+
+                        </Grid>
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                BackgroundColor="White"
+                Margin="10,5,10,5"
+                Padding="5">
+
+                    <StackLayout x:Name="panel_tip"
+                         VerticalOptions="End"
+                         Margin="10,5,10,5"
+                         BackgroundColor="White"
+                         HorizontalOptions="FillAndExpand">
+
+                        <Label
+                    Text="{Binding TextTip , StringFormat='Propina : {0}'}"
+                    FontSize="16"
+                    TextColor="Black"
+                    FontAttributes="Bold"/>
+
+                        <Picker  x:Name="pickerTip"                              
+                        HorizontalOptions="FillAndExpand"
+                        SelectedIndex="0"
+                        VerticalOptions="Center"
+                        TextColor="Gray"
+                        Grid.Row="1"
+                        BackgroundColor="White"
+                        SelectedItem="{Binding SelectedTip}"
+                        Grid.Column="1">
+                            <Picker.Items>
+                                <x:String>Sin propina</x:String>
+                                <x:String>5%</x:String>
+                                <x:String>10%</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+                
+            </StackLayout>
+
+            <StackLayout x:Name="panel_detail_happybirthday"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="Transparent"
+                         IsVisible="{Binding IsVisible_panel_detail_happybirthday, Mode=TwoWay}"
+                         Grid.Row="2">
+
+                <Frame
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                BackgroundColor="White"
+                Margin="10,5,10,5"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Padding="5">
+
+                    <StackLayout x:Name="selected_happybirthday"                         
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="FillAndExpand"
+                             Margin="10,5,10,5"
+                             BackgroundColor="White" >
+
+                        <Label Text="Datos del cumpleñero"
+                               VerticalOptions="Center"
+                               TextColor="Black"/>
+
+                    </StackLayout>
+
+                </Frame>
+                
+            </StackLayout>
+
+
+            <StackLayout x:Name="panel_invites"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="Transparent"
+                         IsVisible="{Binding IsVisible_panel_invites, Mode=TwoWay}"
+                         Grid.Row="2">
+
+                <Frame
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                BackgroundColor="White"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="10,5,10,5"    
+                Padding="5">
+
+                    <StackLayout                         
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="FillAndExpand"
+                             Margin="10,5,10,5"
+                             BackgroundColor="White" >
+
+
+                        <Label Text="Invitados"
+                               VerticalOptions="Center"
+                               TextColor="Black"/>
+                        
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <Grid  x:Name="grid_navigation"
+                   Padding="0"
+                   BackgroundColor="LightGreen"
+                   Grid.Row="3"
+                   RowSpacing="0" >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Atras"
+                        BackgroundColor="Transparent"
+                        VerticalOptions="FillAndExpand"
+                        IsVisible="True"
+                        Command="{Binding CommandBack}"
+                        HorizontalOptions="FillAndExpand"/>
+
+                <Button Text="Siguiente"
+                        TextColor="Black"
+                        BackgroundColor="Transparent"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        Command="{Binding CommandNext}"
+                        Grid.Column="1"/>
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

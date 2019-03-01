@@ -1,0 +1,25 @@
+{
+  "ListHorizontalPage.xaml": [
+    {
+      "Name": "John",
+      "Age": 29,
+      "Photo": "Breakfast0.png"
+    },
+    {
+      "Name": "Pam",
+      "Age": 32,
+      "Photo": "Breakfast1.png"
+    },
+    {
+      "Name": "Casy",
+      "Age": 58,
+      "Photo": "Breakfast2.png"
+    },
+    {
+      "Name": "Susan",
+      "Age": 29,
+      "Photo": "Breakfast3.png"
+    }
+  ]
+
+}

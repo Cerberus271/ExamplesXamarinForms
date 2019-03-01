@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Desing.Reservalo.ColorsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button BackgroundColor="{StaticResource OrangeReservalo}"></Button>
+            <Button BackgroundColor="{StaticResource GreenReservalo}"></Button>
+            <Button BackgroundColor="{StaticResource BlueReservalo}"></Button>
+            <Button BackgroundColor="{StaticResource BlackReservalo}"></Button>
+            <Button StyleClass="CSSButton"></Button>
+
+            <Label Text="Welcome to Xamarin Forms! (Lato-Black)" FontFamily="{StaticResource LatoBlack}" FontSize="18"/>
+            <Label Text="Welcome to Xamarin Forms! (Lato-BlackItalic)" FontFamily="{StaticResource LatoBlackItalic}" FontSize="18"/>
+            <Label Text="Welcome to Xamarin Forms! (Lato-Bold)" FontFamily="{StaticResource LatoBold}" FontSize="18" />
+            <Label Text="Welcome to Xamarin Forms! (Lato-BoldItalic)" FontFamily="{StaticResource LatoBoldItalic}" FontSize="18" />
+            <Label Text="Welcome to Xamarin Forms! (Lato-Hairline)" FontFamily="{StaticResource LatoHairline}" FontSize="18" />
+            <Label Text="Welcome to Xamarin Forms! (Lato-HairlineItalic)" FontFamily="{StaticResource LatoHairlineItalic}" FontSize="18" />
+            <Label Text="Welcome to Xamarin Forms! (Lato-Italic)" FontFamily="{StaticResource LatoItalic}" FontSize="18" />
+            <Label Text="Welcome to Xamarin Forms! (Lato-Light)" FontFamily="{StaticResource LatoLight}" FontSize="18" />
+            <Label Text="Welcome to Xamarin Forms! (Lato-LightItalic)" FontFamily="{StaticResource LatoLightItalic}" FontSize="18" />
+            <Label Text="Welcome to Xamarin Forms! (Lato-Regular)" FontFamily="{StaticResource LatoRegular}" FontSize="18" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

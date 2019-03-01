@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.Control"
+             x:Class="App1.Cards.ListHorizontalPage">
+    <ContentPage.Content>
+
+        <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"
+              Margin="0"
+			  Padding="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Recomendaciones para ti"
+                   Margin="10,5,10,0" 
+                   FontSize="16"
+                   FontAttributes="Bold"
+				   VerticalOptions="End"/>
+            
+            <local:HVScrollGridView ListOrientation="Horizontal"
+                                    x:Name="MessagesListView"
+                                    Grid.Row="1"
+                                    ItemsSource="{Binding .}"                                    
+									VerticalOptions="Start">
+                <local:HVScrollGridView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView>
+                            <ContentView.Content>
+                                <StackLayout>
+                                    <Button Text="{Binding Name}"
+                                            TextColor="White"/>
+                                </StackLayout>
+                            </ContentView.Content>
+                        </ContentView>
+                    </DataTemplate>
+                </local:HVScrollGridView.ItemTemplate>
+            </local:HVScrollGridView>
+            
+
+
+            <StackLayout HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red"
+                         Grid.Row="2">
+                
+            </StackLayout>
+        </Grid>
+
+
+
+    </ContentPage.Content>
+</ContentPage>

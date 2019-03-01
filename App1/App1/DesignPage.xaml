@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.DesignPage">
+    <ContentPage.Content>
+    
+            <Grid 
+                Grid.ColumnSpacing="0"
+                Grid.RowSpacing="0"
+                BackgroundColor="#2E2422">
+
+            <Grid
+                Grid.ColumnSpacing="0"
+                Grid.RowSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid
+                    Grid.ColumnSpacing="0"
+                    Grid.RowSpacing="0"
+                    Padding="24,20,8,20">
+                   
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image
+                        Aspect="AspectFill"
+                        Source="rating.png"
+                        HeightRequest="18"
+                        WidthRequest="18" />
+                    <Label 
+                        FontSize="15"
+                        Grid.Column="1"
+                        Text="Texto"
+                        VerticalTextAlignment="Center"
+                        TextColor="#FFD5CA"
+                        Margin="8,0,0,0"/>
+
+                    <Label
+                        FontSize="16"
+                        Text="Add"
+                        Grid.Column="2"
+                        HorizontalTextAlignment="End"
+                        VerticalTextAlignment="Center"
+                        TextColor="#FFD5CA"/>
+
+                </Grid>
+
+                <Grid
+                    BackgroundColor="#2E2422"
+                    Grid.Row="1"
+                    VerticalOptions="Center"
+                    RowSpacing="0"
+                    ColumnSpacing="0">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Text="Reservations"
+                        TextColor="#F5F5F5"
+                        FontSize="30"
+                        Margin="24,28,0,0"/>
+                    <Label
+                        Grid.Row="1"
+                        Text="22 tables letf"
+                        FontSize="12"
+                        Margin="24,12,0,44"/>
+
+                </Grid>
+
+                <Image
+                    Grid.Row="1"
+                    Grid.RowSpan="2"
+                    Source="rating.png"
+                    VerticalOptions="End"
+                    HorizontalOptions="Start"
+                    Aspect="AspectFit"
+                    Margin="24,0,0,0"
+                    HeightRequest="56"/>
+
+                <Grid 
+                    Grid.Row="3"
+                    ColumnSpacing="0"
+                    RowSpacing="0"
+                    HeightRequest="56"
+                    BackgroundColor="Yellow">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="56"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid
+                        Grid.RowSpan="2"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+
+                        <Image
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit"
+                            Source="rating.png"
+                            HeightRequest="56"/>
+
+                        <StackLayout
+                            Spacing="0"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+
+                            <Label
+                                FontSize="10"
+                                Text="22:77:00"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                LineBreakMode="WordWrap"
+                                TextColor="White"/>
+
+                            <Label
+                                FontSize="10"
+                                Text="22"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                LineBreakMode="WordWrap"
+                                TextColor="White"/>
+
+                        </StackLayout>
+                    </Grid>
+
+                    <Label
+                        FontSize="12"
+                        Grid.Column="1"
+                        Text="Holder"
+                        TextColor="#2C2220"
+                        VerticalOptions="End"
+                        Margin="16,0,0,4"/>
+                    
+                    <StackLayout
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Orientation="Horizontal"
+                        VerticalOptions="Start"
+                        Spacing="0"
+                        Margin="16,4,0,0">
+
+                        <Label
+                            VerticalOptions="Start"
+                            VerticalTextAlignment="Start"
+                            FontSize="12"
+                            FontAttributes="Bold"
+                            Text="Table #"
+                            TextColor="#C73339"/>
+
+                        <Label VerticalOptions="Start"
+                               VerticalTextAlignment="Start"
+                               FontSize="12"
+                               FontAttributes="Bold"
+                               TextColor="#C73339"
+                               Text=" for " />
+                        <Label VerticalOptions="Start"
+                               VerticalTextAlignment="Start"
+                               FontSize="12"
+                               FontAttributes="Bold"
+                               TextColor="#C73339"
+                               AutomationId="GuestNumber"
+                               Text="99999" />
+                    </StackLayout>
+
+                    <Label FontSize="13"
+                           Grid.Column="2"
+                           Grid.RowSpan="2"
+                           HorizontalOptions="End"
+                           TextColor="#6A6564"
+                           AutomationId="HolderPhoneNumber"
+                           Text="holder"
+                           VerticalOptions="Center">
+                       
+                    </Label>
+                    
+                </Grid>
+                
+            </Grid>
+                
+                
+            </Grid>
+       
+    </ContentPage.Content>
+</ContentPage>

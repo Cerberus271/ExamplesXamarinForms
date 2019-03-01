@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ctrls="clr-namespace:App1.EntryDemo"
+             x:Class="App1.EntryDemo.EntryPageDemo">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label
+              StyleClass="signin-form-header-text"
+              Text="Username"
+              TextColor="{Binding Path=LineColor, Source={Reference UsernameEntry}}"
+              Style="{StaticResource HeaderTextStyle}" />
+
+            <ctrls:ExtendedEntry
+                        x:Name="UsernameEntry"
+                        Placeholder="Username"
+                        AutomationId="username"
+                        Text="{Binding UserName.Value, Mode=TwoWay}">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="UniqueStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="LineColor" Value="{Binding Path=TextColor, Source={Reference UsernameEntry}}" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Focused">
+                            <VisualState.Setters>
+                                <Setter Property="LineColor" Value="{StaticResource FocusLineColor}" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Invalid">
+                            <VisualState.Setters>
+                                <Setter Property="LineColor" Value="{StaticResource InvalidLineColor}" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </ctrls:ExtendedEntry>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

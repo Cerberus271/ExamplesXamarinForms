@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\App.xaml</FilePath>
+      <Hash>6D-FA-0E-DC-A8-1F-4A-E7-4D-EE-8A-52-CA-9B-83-46</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Behaviors\BehaviorsPage.xaml</FilePath>
+      <Hash>1F-A5-6E-53-C7-B0-73-2E-3B-67-C2-26-A6-A0-65-16</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\CameraPage.xaml</FilePath>
+      <Hash>87-42-23-F3-42-41-E3-93-95-15-19-84-53-6F-75-81</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\Card1.xaml</FilePath>
+      <Hash>47-F8-C4-23-47-B9-D3-12-40-68-E6-C4-4C-01-24-50</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\Card2.xaml</FilePath>
+      <Hash>5F-DD-52-C8-D5-60-7C-5D-28-7B-51-A4-6C-27-88-34</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\Card3.xaml</FilePath>
+      <Hash>0D-FF-2B-3A-A7-B0-91-98-BB-89-B4-FB-7B-62-20-20</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\Card4.xaml</FilePath>
+      <Hash>A2-27-1A-AE-68-4A-F2-FF-33-51-E3-C3-6B-96-06-E0</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\CardMenu.xaml</FilePath>
+      <Hash>41-8B-2E-63-7F-1A-62-6B-2F-CB-DD-70-78-81-95-30</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\ListHorizontalPage.xaml</FilePath>
+      <Hash>E3-62-83-9B-2D-9D-F1-1B-70-D2-E7-0C-96-AC-3C-6A</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\PopupBusyPage.xaml</FilePath>
+      <Hash>F3-74-C6-2F-E8-45-A7-43-EF-92-68-C7-AA-F5-1C-18</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\PopupTopMessagePage.xaml</FilePath>
+      <Hash>ED-CF-CE-EC-D0-88-BA-8A-C1-04-65-77-4A-97-82-18</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\SumaryOrden.xaml</FilePath>
+      <Hash>25-DC-77-2D-45-89-D0-7D-C5-C6-58-0C-EB-F6-01-B2</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Cards\TabPage.xaml</FilePath>
+      <Hash>31-58-87-AC-01-90-24-FF-3D-9E-6C-9F-69-BC-C5-FE</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Carosuel\PageCarousel.xaml</FilePath>
+      <Hash>2B-F1-0E-B4-68-B7-0B-D4-57-D4-AA-A4-D8-CD-89-20</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\CustomControls\CustomNavigationPage.xaml</FilePath>
+      <Hash>89-E0-73-BA-F5-1E-EC-56-96-AD-03-92-B4-D7-61-C4</Hash>
+      <Properties>
+        <string>BarTextColor</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\DataGrid\Page1.xaml</FilePath>
+      <Hash>30-FC-B7-E2-20-22-DC-07-E5-17-99-B0-50-75-B7-6D</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Degradado\DegradadoPage.xaml</FilePath>
+      <Hash>44-A9-D8-54-F4-6A-13-3B-76-19-25-57-A3-0A-4B-2B</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\DesignPage.xaml</FilePath>
+      <Hash>BF-4C-55-71-86-90-E8-47-EF-73-20-1A-58-98-45-CE</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Desing\Reservalo\ColorsPage.xaml</FilePath>
+      <Hash>FF-22-C0-CF-57-F1-72-A6-17-04-F1-80-AE-FF-36-E6</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\EntryDemo\EntryPageDemo.xaml</FilePath>
+      <Hash>B1-A2-44-5D-87-AE-72-21-A6-A5-BE-92-AD-4C-67-F4</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\FacebookLogin\LoginFacebook.xaml</FilePath>
+      <Hash>9D-88-D2-93-69-6D-AC-04-24-76-74-1B-23-DB-67-F3</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\FacebookLogin\Page1.xaml</FilePath>
+      <Hash>CC-7D-3B-01-60-91-9B-F2-E7-D2-66-0B-E9-E3-37-19</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\FacebookLogin\Page2.xaml</FilePath>
+      <Hash>7D-33-91-95-C1-D4-A0-84-E9-D9-D5-93-22-D2-50-88</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\GoogleMap\PageGoogleMap.xaml</FilePath>
+      <Hash>70-DF-4A-94-4D-6C-59-4C-97-1F-DE-B3-E0-3E-29-B9</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Intro\IntroPage.xaml</FilePath>
+      <Hash>D3-ED-C3-83-CB-49-1C-6D-76-EC-B3-7B-16-F4-E3-31</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Lottie\LottieDemoPage.xaml</FilePath>
+      <Hash>89-38-99-5C-49-13-6A-8E-90-57-0E-48-D4-E7-AE-1A</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\MainPage.xaml</FilePath>
+      <Hash>4D-25-38-47-48-24-3F-DA-D8-46-84-B1-19-83-47-5D</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\MediaManager\MediaFormsPage.xaml</FilePath>
+      <Hash>A9-4E-E8-03-6D-C5-76-FE-67-A8-CE-BC-BC-B0-CF-A2</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\MediaManager\Page1.xaml</FilePath>
+      <Hash>C4-22-95-A6-3B-D8-C3-13-16-38-44-90-18-A5-11-53</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\MediaManager\Page2.xaml</FilePath>
+      <Hash>4A-5F-7E-4C-2A-80-F3-1B-11-43-01-B1-02-2B-77-31</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Popups\LoadingPopupPage.xaml</FilePath>
+      <Hash>7C-65-A1-23-1A-8D-B8-DD-B3-1B-9D-A7-AB-EE-21-AB</Hash>
+      <Properties>
+        <string>CloseWhenBackgroundIsClicked</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Popups\LoginPopupPage.xaml</FilePath>
+      <Hash>3E-CD-D9-A2-72-8E-F8-1F-B8-22-90-77-EC-DA-1E-DD</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Popups\LoginSuccessPopupPage.xaml</FilePath>
+      <Hash>B0-F0-77-84-D0-B7-E4-1C-20-34-9F-DA-6C-98-64-35</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+        <string>BackgroundInputTransparent</string>
+        <string>HasSystemPadding</string>
+        <string>CloseWhenBackgroundIsClicked</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\Popups\MainPageRg.xaml</FilePath>
+      <Hash>2B-F1-16-A1-92-2B-EE-8B-59-F8-DA-7A-3F-E2-97-0B</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\RadialProgress\Page1.xaml</FilePath>
+      <Hash>E7-BD-EE-DA-EF-51-1C-38-A3-DD-E1-48-56-01-E1-97</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\RatingControl\RatingPage.xaml</FilePath>
+      <Hash>C3-B1-5D-E6-7B-CA-C9-05-77-A5-90-AC-C0-60-D2-C7</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\ShellPage\ShellTopTabs.xaml</FilePath>
+      <Hash>3C-4D-84-16-80-CF-6C-F2-41-05-FA-59-E5-A0-E1-51</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\SocialCard\SocialPage.xaml</FilePath>
+      <Hash>11-5C-93-CA-DB-C8-FE-C2-FB-7B-CE-16-2B-A2-E5-F5</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>H:\Xamarin\Xam Examples Plugins\App1\App1\XFDownloadManager\DownloadPage.xaml</FilePath>
+      <Hash>FE-51-08-8D-6D-28-2D-53-06-D8-FC-F5-8A-32-D3-D7</Hash>
+      <Properties />
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

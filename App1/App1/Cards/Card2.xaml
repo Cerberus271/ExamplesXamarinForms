@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Cards.Card2">
+    <ContentPage.Content>
+
+        <Grid 
+            ColumnSpacing="0" 
+            RowSpacing="0">
+
+            <Grid 
+                Padding="20" 
+                BackgroundColor="White"
+                ColumnSpacing="0"
+                RowSpacing="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label
+                    Text="Reservation Details"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    Margin="0,0,0,10"
+                    TextColor="Black"/>              
+
+             <Grid
+               RowSpacing="0"
+               Grid.Row="1"
+               ColumnSpacing="0">
+
+               <Grid.ColumnDefinitions>
+                   <ColumnDefinition Width="30"/>
+                   <ColumnDefinition Width="*"/>
+               </Grid.ColumnDefinitions>
+
+               <Image 
+                   Source="ic_action_person_black.png"
+                   HeightRequest="30"
+                   Aspect="AspectFill"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"/>
+               <Entry                               
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="Center"
+                   Placeholder="Nombre"
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   Grid.Column="1"/>
+
+              </Grid>
+
+             <Grid
+                    RowSpacing="0"
+                    Grid.Row="2"
+                    ColumnSpacing="0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        Source="ic_action_person_black.png"
+                        HeightRequest="30"
+                        Aspect="AspectFill"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"/>
+                    <Entry                               
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center"
+                        Placeholder="Nombre"
+                        PlaceholderColor="Gray"
+                        TextColor="Black"
+                        Grid.Column="1"/>
+
+                </Grid>
+
+             <Grid
+                    RowSpacing="0"
+                    Grid.Row="3"
+                    ColumnSpacing="0">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image 
+                        Source="ic_action_person_black.png"
+                        HeightRequest="30"
+                        Aspect="AspectFill"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Start"/>
+                    <Entry                               
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Placeholder="Nombre"
+                        PlaceholderColor="Gray"
+                        TextColor="Black"
+                        Grid.Column="1"/>
+
+                </Grid>
+
+                <StackLayout
+                    Margin="30,0,0,0"
+                    Grid.Row="4">
+
+
+                    <Label Text="Elegir Sexo"
+                           TextColor="Black"
+                           Margin="2"
+                           Grid.Column="1"
+                           HorizontalOptions="StartAndExpand"/>
+                    <Picker                               
+                        HorizontalOptions="FillAndExpand"
+                        SelectedIndex="0"
+                        VerticalOptions="Center"
+                        TextColor="Black"
+                        Grid.Row="1"
+                        Grid.Column="1">
+                        <Picker.Items>
+                            <x:String>Masculo</x:String>
+                            <x:String>Femenino</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

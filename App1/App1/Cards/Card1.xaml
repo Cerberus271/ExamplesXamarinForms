@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Cards.Card1">
+    <ContentPage.Content>
+
+        <!--<Grid 
+            Padding="8,0,8,10" 
+            RowSpacing="0">
+
+            <Grid 
+                Padding="1" 
+                BackgroundColor="#e1e1e3" 
+                RowSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="192" />
+                    <RowDefinition Height="64" />
+                </Grid.RowDefinitions>
+
+                <Grid 
+                    Grid.Row="0" 
+                    Padding="0" 
+                    BackgroundColor="#e4e4e4">
+                    <Image 
+                        Aspect="AspectFill"
+                        Source="Breakfast1.png"  />
+                </Grid>
+
+                <Grid 
+                    Grid.Row="1" 
+                    BackgroundColor="#ffffff" 
+                    RowSpacing="0">
+                    
+                    <Grid 
+                        Padding="15" 
+                        RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+
+                        <Grid
+                            RowSpacing="0"
+                            ColumnSpacing="0">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label 
+                                Text="Pardos chiken"  
+                                FontSize="14" 
+                                TextColor="#3c3947" 
+                                HorizontalOptions="Start"/>
+                            <Label                               
+                                HorizontalOptions="End"
+                                Grid.Column="1"
+                                TextColor="#3c3947"
+                                Text="Rating"/>
+
+                        </Grid>
+                        
+                        <Label 
+                            Grid.Row="1" 
+                            Text="Av. Vargas machuca 12345"  
+                            FontSize="14" 
+                            TextColor="#9e9ea0" />
+
+                    </Grid>
+                    
+                </Grid>
+
+            </Grid>
+
+        </Grid>-->
+
+
+        <Grid 
+            Padding="8,0,8,10" 
+            RowSpacing="0">
+
+            <Grid 
+                Padding="1" 
+                BackgroundColor="#e1e1e3" 
+                RowSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Grid 
+                    Grid.Row="0" 
+                    Padding="0" 
+                    BackgroundColor="#e4e4e4">
+                    <Image 
+                        Aspect="AspectFill"
+                        Source="Breakfast1.png"  />
+                </Grid>
+
+                <Grid 
+                    Grid.Row="1" 
+                    BackgroundColor="#ffffff" 
+                    RowSpacing="0">
+
+                    <Grid 
+                        Padding="15" 
+                        RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+
+                        <Grid
+                            RowSpacing="0"
+                            ColumnSpacing="0">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label 
+                                Text="Pardos chiken"  
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="#3c3947" 
+                                HorizontalOptions="Start"/>
+                            <Label                               
+                                HorizontalOptions="End"
+                                Grid.Column="1"
+                                TextColor="#3c3947"
+                                Text="Rating"/>
+
+                        </Grid>
+
+                        <Label 
+                            Grid.Row="1"  >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Fecha: "  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                    <Span Text="Av. Vargas machuca 12345"  FontAttributes="Bold" TextColor="#9e9ea0"/>                                    
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label 
+                            Grid.Row="2"  >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Hora: "  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                    <Span Text="Av. Vargas machuca 12345"  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label 
+                            Grid.Row="3"  >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Invitados: "  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                    <Span Text="Av. Vargas machuca 12345"  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                    </Grid>
+
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="App1.Cards.CameraPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="NubankListViewItemBackgroundColor">#f7f7f7</Color>
+            <Color x:Key="NubankTimelineColor">#808080</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+
+        <StackLayout x:Name="MainStackLayout" >
+
+
+            <lottie:AnimationView
+                x:Name="LottieView" 
+                Margin="0,10,0,0"
+                HeightRequest="130"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="Yellow"
+                Animation="happy.json" 
+                Loop="False" 
+                AutoPlay="True"/>
+
+
+            <Button  
+                    Text="Reserva realizada con éxito." 
+                    TextColor="White" 
+                    Margin="20,0,20,0"               
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand" 
+                    BackgroundColor="{StaticResource BlueReservalo}" />
+
+            <Label 
+                   Text="Nombre de restaurant" 
+                   FontAttributes="Bold"
+                   FontSize="20" 
+                   Margin="20,10,20,5"
+                   HorizontalOptions="Start"/>
+
+
+            <Grid
+                    BackgroundColor="{StaticResource NubankListViewItemBackgroundColor}"
+                    Padding="10,15"
+                    ColumnSpacing="20" >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Image 
+                            Grid.Row="0"
+                            Source="ic_action_time_black.png" />
+
+                    <BoxView 
+                            Grid.Row="1"
+                            BackgroundColor="{StaticResource NubankTimelineColor}"
+                            WidthRequest="1"
+                            HorizontalOptions="Center" />
+                </Grid>
+
+                <StackLayout Grid.Column="1" >
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label 
+                                Grid.Column="0"
+                                Text="FECHA Y HORA"
+                                FontAttributes="Bold" />
+
+                        <Label 
+                                Grid.Column="1"
+                                Text=""/>
+                    </Grid>
+
+                    <Label 
+                            Text="23-23-45" />
+
+                    <Label 
+                            Text="10:30 hs" />
+
+                </StackLayout>
+
+            </Grid>
+
+            <Grid
+                    BackgroundColor="{StaticResource NubankListViewItemBackgroundColor}"
+                    Padding="10,15"
+                    ColumnSpacing="20" >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Image 
+                            Grid.Row="0"
+                            Source="ic_action_dining_dark.png" />
+
+                    <BoxView 
+                            Grid.Row="1"
+                            BackgroundColor="{StaticResource NubankTimelineColor}"
+                            WidthRequest="1"
+                            HorizontalOptions="Center" />
+                </Grid>
+
+                <StackLayout Grid.Column="1" >
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label 
+                                Grid.Column="0"
+                                Text="EVENTO"
+                                FontAttributes="Bold" />
+
+                        <Label 
+                                Grid.Column="1"
+                                Text=""/>
+                    </Grid>
+
+                    <Label 
+                            Text="Cumpleaños" />
+
+                    <Label 
+                            Text="" />
+
+                </StackLayout>
+
+            </Grid>
+
+            <Grid
+                    BackgroundColor="{StaticResource NubankListViewItemBackgroundColor}"
+                    VerticalOptions="FillAndExpand"
+                    Padding="10,15"
+                    ColumnSpacing="20" >
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+                    <Image 
+                            Grid.Row="0"
+                            Source="ic_action_multicontacs_dark.png" />
+
+                    <BoxView 
+                            Grid.Row="1"
+                            BackgroundColor="{StaticResource NubankTimelineColor}"
+                            WidthRequest="1"
+                            HorizontalOptions="Center" />
+
+                </Grid>
+
+                <StackLayout Grid.Column="1" >
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label 
+                                Grid.Column="0"
+                                Text="INVITADOS"
+                                FontAttributes="Bold"  />
+
+                        <Label 
+                                Grid.Column="1"
+                                Text=""/>
+                    </Grid>
+
+                    <Label 
+                            Text="23 Invitados" />
+
+                </StackLayout>
+
+            </Grid>
+
+            <Button  
+                    Text="Aceptar" 
+                    Command="{Binding ReservationCommand}" 
+                    IsVisible="{Binding IsVisiableRegister}"
+                    TextColor="White" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="End" 
+                    BackgroundColor="{StaticResource GreenReservalo}" />
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

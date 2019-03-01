@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MediaManager.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            
+       
+        <Grid WidthRequest="200"
+              RowSpacing="0"
+              BackgroundColor="Yellow">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="160"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.RowSpan="2"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     BackgroundColor="Black" />
+
+            <ImageButton Source="DataForm_Date.png" 
+                             CornerRadius="40" 
+                             WidthRequest="80" 
+                             Grid.Column="1"
+                             BackgroundColor="White"
+                             Padding="15"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             HeightRequest="80" />
+
+                <Entry 
+                             WidthRequest="60" 
+                             Grid.Column="1"
+                             Placeholder="Nombre Stream"
+                             PlaceholderColor="White"
+                             HorizontalTextAlignment="Center"
+                             BackgroundColor="Transparent"
+                             Grid.Row="1"
+                             Margin="0,10"
+                             HeightRequest="60" />
+            
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

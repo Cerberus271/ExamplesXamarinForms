@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Cards.TabPage">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     Spacing="0">
+
+            <StackLayout x:Name="stkTabHeader" 
+                         HorizontalOptions="FillAndExpand"
+                         BackgroundColor="Yellow"
+                         HeightRequest="100">
+
+                <Label Text="Header"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+            </StackLayout>
+            
+            <StackLayout HorizontalOptions="StartAndExpand" 
+                         BackgroundColor="Black">
+
+                <Grid VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand"
+                      BackgroundColor="Transparent" >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="3" />                       
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>              
+                    
+                    <Button x:Name="btnHome" 
+                            Text="Home"
+                            TextColor="White"
+                            BackgroundColor="Transparent"  
+                            Clicked="Tab1Clicked"   
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="FillAndExpand"
+                            Grid.Column="0"/>
+                    
+                    <Button x:Name="btnArtist" 
+                            Text="Artista"
+                            TextColor="White"
+                            BackgroundColor="Transparent" 
+                            Clicked="Tab2Clicked"  
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="FillAndExpand"  
+                            Grid.Column="1"/>
+
+                    <BoxView x:Name="vHombe" 
+                             Grid.Row="1" 
+                             Grid.Column="0"
+                             BackgroundColor="Red"/>
+
+                    <BoxView x:Name="vArtist" 
+                             Grid.Row="1" 
+                             Grid.Column="1"
+                             BackgroundColor="Red"/>
+                    
+                </Grid>
+
+            </StackLayout>
+            
+
+            <StackLayout x:Name="stkTab1" 
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Red">
+
+                <StackLayout.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                </StackLayout.GestureRecognizers>
+                
+                <Label Text="Panel 1"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+            </StackLayout>
+
+            <StackLayout x:Name="stkTab2" 
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="Blue">
+
+                <StackLayout.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                </StackLayout.GestureRecognizers>
+                
+                <Label Text="Panel 2"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+
+            </StackLayout> 
+            
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+</ContentPage>

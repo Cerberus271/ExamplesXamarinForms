@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Cards.SumaryOrden">
+    <ContentPage.Content>
+
+        
+            <StackLayout VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"                     
+                     BackgroundColor="Gray" >
+
+            <Grid VerticalOptions="FillAndExpand"
+                  HorizontalOptions="FillAndExpand"  Padding="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Frame              
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                Padding="20"
+                Margin="0"
+                Grid.Row="0"
+                BackgroundColor="White">
+
+                    <StackLayout
+                    Padding="0"
+                    BackgroundColor="White">
+
+                        <Grid Padding="0"
+                        Margin="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70" />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="DataGrid_SalesPerson_4.png"></Image>
+
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                    <RowDefinition Height="auto" />
+                                </Grid.RowDefinitions>
+
+                                <Label Text="StarBucks"
+                                FontSize="18"
+                                TextColor="Black"
+                                FontAttributes="Bold"/>
+                                <Label Text="1126 Central Park, La Molina lima"
+                                Grid.Row="1" 
+                                FontSize="14"
+                                TextColor="LightGray"
+                                FontAttributes="Bold"/>
+                                <BoxView Color="Gray"
+                                Grid.Row="2"                                
+                                HeightRequest="2"
+                                />
+
+                            </Grid>
+
+                        </Grid>
+
+                    </StackLayout>
+
+
+                </Frame>
+
+                <Frame 
+                x:Name="PanelUser"               
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                Padding="0"
+                Margin="0"
+                Grid.Row="1"
+                BackgroundColor="White">
+
+                    <StackLayout
+                    Padding="20,5"
+                    BackgroundColor="White">
+
+                        <Label Text="Tus datos, por favor!"
+                                FontSize="18"
+                                TextColor="Black"
+                                Margin="0,5"
+                                FontAttributes="Bold"/>
+                     
+                        <Entry                      
+                        x:Name="txtName"
+                        PlaceholderColor="LightGray"
+                        Placeholder="Nombre"  />
+
+                        <Entry 
+                        x:Name="txtEmail"
+                        Placeholder="Tu correo aqui" 
+                        PlaceholderColor="LightGray"/>
+
+                    </StackLayout>
+
+
+                </Frame>
+
+
+                <Frame               
+                CornerRadius="10"
+                HasShadow="True"           
+                OutlineColor="White"
+                Padding="0"
+                Margin="0"
+                Grid.Row="2"
+                BackgroundColor="White">
+
+                    <StackLayout
+                    Padding="20,5"
+                    BackgroundColor="White">
+
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Tus platos"
+                                FontSize="18"
+                                TextColor="Black"
+                                Margin="0,15"
+                                FontAttributes="Bold"/>
+
+                            <Label Text="Total S/12.34"
+                            FontSize="18"
+                            TextColor="{StaticResource GreenReservalo}"
+                            FontAttributes="Bold"
+                            Grid.Column="1"
+                            VerticalOptions="CenterAndExpand"
+                            VerticalTextAlignment="Center"
+                            HorizontalTextAlignment="Center"
+                            HorizontalOptions="End"/>
+
+                        </Grid>
+
+
+
+                        <Grid Padding="0"                  
+                                        RowSpacing="0"
+                                        Margin="0,0,0,5"
+                                        ColumnSpacing="0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="30" />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="White Chocolate"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="16"
+                                            FontAttributes="Bold"
+                                            TextColor="LightGray"
+                                   VerticalOptions="End"
+                                            Margin="0,0,0,0"/>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Text="S/.3.45"
+                                 TextColor="LightGray"
+                                 VerticalTextAlignment="Center"
+                                 VerticalOptions="End"
+                                 FontSize="16"/>
+
+                                <Frame 
+                                                CornerRadius="20"
+                                                HasShadow="True"           
+                                                OutlineColor="{StaticResource BlueReservalo}"
+                                                Grid.Column="1"
+                                                Padding="0"                                    
+                                                BackgroundColor="White">
+
+                                    <StackLayout 
+                                                    BackgroundColor="Transparent"
+                                                    Orientation="Horizontal">
+                                        <Button Text="-"
+                                                  VerticalOptions="Center"
+                                                  FontSize="10"
+                                                  WidthRequest="35"
+                                                  HeightRequest="30"
+                                                  TextColor="{StaticResource BlueReservalo}"
+                                                  BackgroundColor="Transparent"/>
+                                        <Label Text="3"
+                                                    TextColor="{StaticResource BlueReservalo}"
+                                                    VerticalOptions="Center"
+                                                    FontAttributes="Bold"
+                                                    FontSize="16"/>
+                                        <Button Text="+"
+                                                    VerticalOptions="Center"
+                                                    FontSize="10"
+                                                    TextColor="{StaticResource BlueReservalo}"
+                                                    WidthRequest="35"
+                                                    HeightRequest="40"
+                                                    BackgroundColor="Transparent"/>
+                                    </StackLayout>
+
+                                </Frame>
+
+                            </Grid>
+
+                        </Grid>
+
+
+                        <Grid Padding="0"                  
+                                        RowSpacing="0"
+                                        Margin="0,0,0,5"
+                                        ColumnSpacing="0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="30" />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="White Chocolate"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="16"
+                                            FontAttributes="Bold"
+                                            TextColor="LightGray"
+                                   VerticalOptions="End"
+                                            Margin="0,0,0,0"/>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Text="S/.3.45"
+                                 TextColor="LightGray"
+                                 VerticalTextAlignment="Center"
+                                 VerticalOptions="End"
+                                 FontSize="16"/>
+
+                                <Frame 
+                                                CornerRadius="20"
+                                                HasShadow="True"           
+                                                OutlineColor="{StaticResource BlueReservalo}"
+                                                Grid.Column="1"
+                                                Padding="0"                                    
+                                                BackgroundColor="White">
+
+                                    <StackLayout 
+                                                    BackgroundColor="Transparent"
+                                                    Orientation="Horizontal">
+                                        <Button Text="-"
+                                                  VerticalOptions="Center"
+                                                  FontSize="10"
+                                                  WidthRequest="35"
+                                                  HeightRequest="30"
+                                                  TextColor="{StaticResource BlueReservalo}"
+                                                  BackgroundColor="Transparent"/>
+                                        <Label Text="3"
+                                                    TextColor="{StaticResource BlueReservalo}"
+                                                    VerticalOptions="Center"
+                                                    FontAttributes="Bold"
+                                                    FontSize="16"/>
+                                        <Button Text="+"
+                                                    VerticalOptions="Center"
+                                                    FontSize="10"
+                                                    TextColor="{StaticResource BlueReservalo}"
+                                                    WidthRequest="35"
+                                                    HeightRequest="40"
+                                                    BackgroundColor="Transparent"/>
+                                    </StackLayout>
+
+                                </Frame>
+
+                            </Grid>
+
+                        </Grid>
+
+                        <Grid Padding="0"                  
+                                        RowSpacing="0"
+                                        Margin="0,0,0,5"
+                                        ColumnSpacing="0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="30" />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="White Chocolate"
+                                            VerticalTextAlignment="Center"
+                                            FontSize="16"
+                                            FontAttributes="Bold"
+                                            TextColor="LightGray"
+                                   VerticalOptions="End"
+                                            Margin="0,0,0,0"/>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label  Text="S/.3.45"
+                                 TextColor="LightGray"
+                                 VerticalTextAlignment="Center"
+                                 VerticalOptions="End"
+                                 FontSize="16"/>
+
+                                <Frame 
+                                                CornerRadius="20"
+                                                HasShadow="True"           
+                                                OutlineColor="{StaticResource BlueReservalo}"
+                                                Grid.Column="1"
+                                                Padding="0"                                    
+                                                BackgroundColor="White">
+
+                                    <StackLayout 
+                                                    BackgroundColor="Transparent"
+                                                    Orientation="Horizontal">
+                                        <Button Text="-"
+                                                  VerticalOptions="Center"
+                                                  FontSize="10"
+                                                  WidthRequest="35"
+                                                  HeightRequest="30"
+                                                  TextColor="{StaticResource BlueReservalo}"
+                                                  BackgroundColor="Transparent"/>
+                                        <Label Text="3"
+                                                    TextColor="{StaticResource BlueReservalo}"
+                                                    VerticalOptions="Center"
+                                                    FontAttributes="Bold"
+                                                    FontSize="16"/>
+                                        <Button Text="+"
+                                                    VerticalOptions="Center"
+                                                    FontSize="10"
+                                                    TextColor="{StaticResource BlueReservalo}"
+                                                    WidthRequest="35"
+                                                    HeightRequest="40"
+                                                    BackgroundColor="Transparent"/>
+                                    </StackLayout>
+
+                                </Frame>
+
+                            </Grid>
+
+                        </Grid>
+
+                    </StackLayout>
+
+
+                </Frame>
+            
+            </Grid>
+
+             <StackLayout
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="50"
+                BackgroundColor="{StaticResource GreenReservalo}">
+
+                    <Button Text="ORDENAR"
+                       FontSize="18"
+                       TextColor="White"
+                       VerticalOptions="CenterAndExpand"
+                       BackgroundColor="Transparent"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+                
+                
+            </StackLayout>         
+
+    </ContentPage.Content>
+    
+</ContentPage>

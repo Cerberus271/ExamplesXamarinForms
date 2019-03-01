@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FacebookLogin.Page1" BackgroundColor="Red" Title="Navigation Trans">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Buscar" Order="Primary" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Yellow"
+                     Orientation="Horizontal"
+                     VerticalOptions="End">
+
+            <Label Text="Total: $23.00"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="18" />
+            <Label Text="Cantidad: 2 Pedidos"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="18" />
+            
+            <!--<Button Text="Siguiente" Clicked="Button_Clicked"/>-->
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

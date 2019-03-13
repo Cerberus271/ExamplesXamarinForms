@@ -37,7 +37,6 @@ H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\RatingControl
 H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\ShellPage\ShellTopTabs.xaml.g.cs
 H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\SocialCard\SocialPage.xaml.g.cs
 H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\XFDownloadManager\DownloadPage.xaml.g.cs
-H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\Desing\Reservalo\Style1.css.g.cs
 H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
 H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
 H:\Xamarin\Xam Examples Plugins\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs

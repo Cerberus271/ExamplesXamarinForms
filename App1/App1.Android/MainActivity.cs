@@ -37,14 +37,14 @@ namespace App1.Droid
             //App.ScreenWidth = (double)((pixelWidth - 0.5f) / screenPixelDensity);
             //StatusBarHelper.DecorView = this.Window.DecorView;
 
-            LoadApplication(new App());
+            //LoadApplication(new App());
 
-            //LoadApplication(UXDivers.Gorilla.Droid.Player.CreateApplication(
-            //this,
-            //new UXDivers.Gorilla.Config("Good Gorilla")
-            //  // Register Grial Shared assembly
-            //  .RegisterAssemblyFromType<App1.Cards.SumaryOrden>()
-            //));
+            LoadApplication(UXDivers.Gorilla.Droid.Player.CreateApplication(
+            this,
+            new UXDivers.Gorilla.Config("Good Gorilla")
+              // Register Grial Shared assembly
+              .RegisterAssemblyFromType<App1.Cards.SumaryOrden>()
+            ));
 
         }
 

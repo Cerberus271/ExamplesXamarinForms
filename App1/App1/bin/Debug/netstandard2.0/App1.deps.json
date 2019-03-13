@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "1b991946952849474bb0cdfc09877f82190d165c"
+    "signature": "1f01b0a43abb92a1be0da204a6bb7baee3a08f15"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,7 +11,7 @@
         "dependencies": {
           "Ansuria.XFGloss": "1.1.3",
           "Com.Airbnb.Xamarin.Forms.Lottie": "2.7.0",
-          "LiveXAML": "2.1.63",
+          "LiveXAML": "2.1.70",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "11.0.2",
           "Plugin.FacebookClient": "1.4.0",
@@ -55,7 +55,7 @@
           }
         }
       },
-      "LiveXAML/2.1.63": {},
+      "LiveXAML/2.1.70": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
@@ -268,12 +268,12 @@
       "path": "com.airbnb.xamarin.forms.lottie/2.7.0",
       "hashPath": "com.airbnb.xamarin.forms.lottie.2.7.0.nupkg.sha512"
     },
-    "LiveXAML/2.1.63": {
+    "LiveXAML/2.1.70": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-grkkxinJ0J9VpZM1gW8iIrcvGKZgVcnaHWhHSFVSQ3SkztI9A9XwiPgC0Pas0hPglbcmjQCx5NkipfNlDNtTfg==",
-      "path": "livexaml/2.1.63",
-      "hashPath": "livexaml.2.1.63.nupkg.sha512"
+      "sha512": "sha512-hV1jqObRN2TBEVsSjifyln2UJ/00Sp80l1EOdAsWofWakGRKtmFUFI1WBZ+OGGxVeI5V8fa2tU5LSgCh7fy6vA==",
+      "path": "livexaml/2.1.70",
+      "hashPath": "livexaml.2.1.70.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

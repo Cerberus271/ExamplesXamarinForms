@@ -66,10 +66,10 @@
           "lib/netstandard1.3/EngineIoClientDotNet.dll": {}
         }
       },
-      "LiveXAML/2.1.63": {
+      "LiveXAML/2.1.70": {
         "type": "package",
         "build": {
-          "build/LiveXAML.targets": {}
+          "build/netstandard2.0/LiveXAML.targets": {}
         }
       },
       "Newtonsoft.Json/11.0.2": {
@@ -1098,7 +1098,7 @@
         "dependencies": {
           "Ansuria.XFGloss": "1.1.3",
           "Com.Airbnb.Xamarin.Forms.Lottie": "2.7.0",
-          "LiveXAML": "2.1.63",
+          "LiveXAML": "2.1.70",
           "Newtonsoft.Json": "11.0.2",
           "Plugin.FacebookClient": "1.4.0",
           "Plugin.MediaManager": "0.4.5",
@@ -1200,19 +1200,24 @@
         "lib/netstandard1.3/EngineIoClientDotNet.dll"
       ]
     },
-    "LiveXAML/2.1.63": {
-      "sha512": "grkkxinJ0J9VpZM1gW8iIrcvGKZgVcnaHWhHSFVSQ3SkztI9A9XwiPgC0Pas0hPglbcmjQCx5NkipfNlDNtTfg==",
+    "LiveXAML/2.1.70": {
+      "sha512": "hV1jqObRN2TBEVsSjifyln2UJ/00Sp80l1EOdAsWofWakGRKtmFUFI1WBZ+OGGxVeI5V8fa2tU5LSgCh7fy6vA==",
       "type": "package",
-      "path": "livexaml/2.1.63",
+      "path": "livexaml/2.1.70",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/LiveXAML.targets",
-        "build/XamarinLive.Build.dll",
-        "build/XamarinLive.Common.dll",
-        "build/minified.cs",
-        "build/minified.tpl.cs",
-        "livexaml.2.1.63.nupkg.sha512",
+        "build/netstandard2.0/LiveXAML.targets",
+        "build/netstandard2.0/XamarinLive.Build.dll",
+        "build/netstandard2.0/XamarinLive.Common.dll",
+        "build/netstandard2.0/minified.cs",
+        "build/netstandard2.0/minified.tpl.cs",
+        "build/portable-win+net45+wp80+win81+wpa81/LiveXAML.targets",
+        "build/portable-win+net45+wp80+win81+wpa81/XamarinLive.Build.dll",
+        "build/portable-win+net45+wp80+win81+wpa81/XamarinLive.Common.dll",
+        "build/portable-win+net45+wp80+win81+wpa81/minified.cs",
+        "build/portable-win+net45+wp80+win81+wpa81/minified.tpl.cs",
+        "livexaml.2.1.70.nupkg.sha512",
         "livexaml.nuspec"
       ]
     },
@@ -3098,7 +3103,7 @@
       "Ansuria.XFGloss >= 1.1.3",
       "App1 >= 1.0.0",
       "Com.Airbnb.Xamarin.Forms.Lottie >= 2.7.0",
-      "LiveXAML >= 2.1.63",
+      "LiveXAML >= 2.1.70",
       "Newtonsoft.Json >= 11.0.2",
       "Plugin.FacebookClient >= 1.4.0",
       "Plugin.MediaManager >= 0.4.5",
@@ -3170,7 +3175,7 @@
           },
           "LiveXAML": {
             "target": "Package",
-            "version": "[2.1.63, )"
+            "version": "[2.1.70, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

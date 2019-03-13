@@ -57,17 +57,14 @@
             <!--  font families  -->
             <OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
                 <On Platform="iOS">HelveticaNeue</On>
-                <On Platform="Android">sans-serif</On>
             </OnPlatform>
 
             <OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String">
-                <On Platform="iOS">HelveticaNeue-Light</On>
-                <On Platform="Android">sans-serif-light</On>
+                <On Platform="iOS">HelveticaNeue-Light</On>             
             </OnPlatform>
 
             <OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String">
                 <On Platform="iOS">HelveticaNeue-Medium</On>
-                <On Platform="Android">sans-serif-medium</On>
             </OnPlatform>
 
             <!--  font sizes  -->

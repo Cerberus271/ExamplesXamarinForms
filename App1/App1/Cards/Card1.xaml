@@ -4,6 +4,7 @@
              x:Class="App1.Cards.Card1">
     <ContentPage.Content>
 
+        <StackLayout>
         <!--<Grid 
             Padding="8,0,8,10" 
             RowSpacing="0">
@@ -175,7 +176,167 @@
             </Grid>
 
         </Grid>
-        
+
+
+            <Grid 
+            Padding="8,0,8,10" 
+            RowSpacing="0">
+
+                <Grid 
+                Padding="1" 
+                BackgroundColor="#e1e1e3" 
+                RowSpacing="0">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid 
+            Padding="0"
+            BackgroundColor="White"
+            RowSpacing="0">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Text="H"
+                        BackgroundColor="LightGreen"
+                        VerticalOptions="Center"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="24"
+                        HorizontalOptions="Center"
+                        WidthRequest="70"
+                        HeightRequest="70"
+                        CornerRadius="70"/>
+
+                        <Grid 
+                        Padding="15" 
+                    Grid.Column="1"
+                        RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="20" />
+                            </Grid.RowDefinitions>
+
+                            <Grid
+                            RowSpacing="0"
+                            ColumnSpacing="0">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label 
+                                Text="Hairol lucas"  
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                TextColor="#3c3947"
+                            Margin="0,10"
+                                HorizontalOptions="Start"/>
+                                <Label                               
+                                HorizontalOptions="End"
+                                Grid.Column="1"
+                                TextColor="#3c3947"
+                            Margin="0,10"
+                            FontAttributes="Bold"
+                                Text="Total: S/. 45.6"/>
+
+                            </Grid>
+
+                            <StackLayout Orientation="Horizontal"
+                                 Grid.Row="1" >
+
+                                <Image Source="ic_action_person_black.png"  
+                               Aspect="AspectFill"
+                               WidthRequest="20"/>
+
+                                <Label 
+                             >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Entradas: "  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                            <Span Text="2"  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                            </StackLayout>
+
+
+                            <StackLayout Orientation="Horizontal"
+                                 Grid.Row="2" >
+
+                                <Image Source="ic_action_person_black.png"  
+                               Aspect="AspectFill"
+                               WidthRequest="20"/>
+
+                                <Label 
+                             >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Fondos: "  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                            <Span Text="1"  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal"
+                                 Grid.Row="3" >
+
+                                <Image Source="ic_action_person_black.png"  
+                               Aspect="AspectFill"
+                               WidthRequest="20"/>
+
+                                <Label 
+                             >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Bebidas: "  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                            <Span Text="2"  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal"
+                                 Grid.Row="4" >
+
+                                <Image Source="ic_action_person_black.png"  
+                               Aspect="AspectFill"
+                               WidthRequest="20"/>
+
+                                <Label 
+                             >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Postres: "  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                            <Span Text="3"  FontAttributes="Bold" TextColor="#9e9ea0"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+
+                            </StackLayout>
+
+                        </Grid>
+
+                    </Grid>
+
+                </Grid>
+
+            </Grid>
+            
+          
+
+        </StackLayout>
         
     </ContentPage.Content>
 </ContentPage>

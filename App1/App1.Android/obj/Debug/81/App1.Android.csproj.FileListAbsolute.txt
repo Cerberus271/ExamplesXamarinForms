@@ -479,3 +479,8 @@ H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Sy
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\App1.dll.mdb
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\Plugin.ExternalMaps.dll.mdb
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\Plugin.FacebookClient.Abstractions.dll.mdb
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\Plugin.FacebookClient.dll.mdb
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb

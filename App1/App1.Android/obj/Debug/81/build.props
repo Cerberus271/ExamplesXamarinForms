@@ -20,5 +20,5 @@ AndroidCreatePackagePerAbi=
 OS=Windows_NT
 DesignTimeBuild=
 AndroidIncludeDebugSymbols=True
-AdbTarget=-s 320134faccce949f
+AdbTarget=-s LMX410DEFIBATKPVQS
 AdbOptions=

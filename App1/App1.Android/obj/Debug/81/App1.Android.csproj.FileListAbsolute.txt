@@ -479,6 +479,12 @@ H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Sy
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\res\drawable\ic_action_entrada.png
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\res\drawable\ic_action_fondo.png
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\res\drawable\ic_action_dessert.png
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\res\drawable\ic_action_local_drink.png
+H:\Xamarin\Xam Examples Plugins\App1\App1\bin\Debug\netstandard2.0\App1.dll
+H:\Xamarin\Xam Examples Plugins\App1\App1.Android\bin\Debug\App1.dll.mdb
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\App1.dll.mdb
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\Plugin.ExternalMaps.dll.mdb
 H:\Xamarin\Xam Examples Plugins\App1\App1.Android\obj\Debug\81\linksrc\Plugin.FacebookClient.Abstractions.dll.mdb
